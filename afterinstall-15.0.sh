@@ -16,10 +16,10 @@ zypper removerepo http://download.opensuse.org/source/distribution/leap/15.0/rep
 zypper removerepo http://download.opensuse.org/source/distribution/leap/15.0/repo/non-oss/
 
 # - Add third part repositories
-zypper addrepo http://packman.inode.at/suse/openSUSE_Leap_15.0/ 'packman' -p 90
-zypper addrepo https://dl.google.com/linux/rpm/stable/x86_64/ 'google-chrome' -p 80
-zypper addrepo http://download.opensuse.org/repositories/home:marceloatie/openSUSE_Leap_15.0/home:marceloatie.repo 'telegram' -p 80
-zypper addrepo http://download.opensuse.org/repositories/mozilla/openSUSE_Leap_15.0/ 'mozilla' -p 80
+zypper addrepo -p 90 http://packman.inode.at/suse/openSUSE_Leap_15.0/ 'packman'
+zypper addrepo -p 80 https://dl.google.com/linux/rpm/stable/x86_64/ 'google-chrome'
+zypper addrepo -p 80 http://download.opensuse.org/repositories/home:marceloatie/openSUSE_Leap_15.0/home:marceloatie.repo 'telegram' 
+zypper addrepo -p 80 http://download.opensuse.org/repositories/mozilla/openSUSE_Leap_15.0/ 'mozilla'
 
 zypper refresh
 
