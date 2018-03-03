@@ -21,8 +21,7 @@ zypper addrepo -p 80 https://dl.google.com/linux/rpm/stable/x86_64/ 'google-chro
 zypper addrepo -p 80 http://download.opensuse.org/repositories/home:marceloatie/openSUSE_Leap_15.0/home:marceloatie.repo 'telegram' 
 zypper addrepo -p 80 http://download.opensuse.org/repositories/mozilla/openSUSE_Leap_15.0/ 'mozilla'
 
-zypper refresh
-
 # - Install new software
-zypper dup --from http://packman.inode.at/suse/openSUSE_Leap_15.0/
-zypper in telegram, google-chrome-stable, vlc, vlc-codecs, qbittorrent, fuse-exfat
+zypper refresh
+zypper dist-upgrade --from http://packman.inode.at/suse/openSUSE_Leap_15.0/
+zypper install telegram google-chrome-stable vlc vlc-codecs qbittorrent fuse-exfat
