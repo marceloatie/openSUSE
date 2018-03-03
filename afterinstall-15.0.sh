@@ -1,9 +1,7 @@
 #!/bin/sh
 
 # - Google's Certificate
-wget https://dl.google.com/linux/linux_signing_key.pub
-rpm --import linux_signing_key.pub
-rm linux_signing_key.pub
+rpm --import https://dl.google.com/linux/linux_signing_key.pub
 
 # - Remove unused repositories
 # debug
