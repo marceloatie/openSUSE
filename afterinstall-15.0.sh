@@ -23,5 +23,6 @@ zypper addrepo -p 80 http://download.opensuse.org/repositories/mozilla/openSUSE_
 
 # - Install new software
 zypper refresh
-zypper dist-upgrade --from http://packman.inode.at/suse/openSUSE_Leap_15.0/
-zypper install telegram google-chrome-stable vlc vlc-codecs qbittorrent fuse-exfat
+zypper -n dist-upgrade --allow-vendor-change --from packman
+zypper -n dist-upgrade --allow-vendor-change --from mozilla
+zypper -n install telegram google-chrome-stable vlc vlc-codecs qbittorrent fuse-exfat
