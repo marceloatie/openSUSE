@@ -14,13 +14,13 @@ zypper removerepo http://download.opensuse.org/source/distribution/leap/15.0/rep
 zypper removerepo http://download.opensuse.org/source/distribution/leap/15.0/repo/non-oss/
 
 # - Add third part repositories
-zypper addrepo -p 90 http://packman.inode.at/suse/openSUSE_Leap_15.0/ 'packman'
-zypper addrepo -p 80 https://dl.google.com/linux/rpm/stable/x86_64/ 'google-chrome'
-zypper addrepo -p 80 http://download.opensuse.org/repositories/home:/marceloatie/openSUSE_Leap_15.0/ 'telegram'
-zypper addrepo -p 80 http://download.opensuse.org/repositories/mozilla/openSUSE_Leap_15.0/ 'mozilla'
+zypper --quiet --non-interactive --gpg-auto-import-keys addrepo -p 90 http://packman.inode.at/suse/openSUSE_Leap_15.0/ 'packman'
+zypper --quiet --non-interactive --gpg-auto-import-keys addrepo -p 80 https://dl.google.com/linux/rpm/stable/x86_64/ 'google-chrome'
+zypper --quiet --non-interactive --gpg-auto-import-keys addrepo -p 80 http://download.opensuse.org/repositories/home:/marceloatie/openSUSE_Leap_15.0/ 'telegram'
+zypper --quiet --non-interactive --gpg-auto-import-keys addrepo -p 80 http://download.opensuse.org/repositories/mozilla/openSUSE_Leap_15.0/ 'mozilla'
 
 # - Install new software
 zypper refresh
-zypper -n dist-upgrade --allow-vendor-change --from packman
-zypper -n dist-upgrade --allow-vendor-change --from mozilla
-zypper -n install telegram google-chrome-stable vlc vlc-codecs qbittorrent fuse-exfat
+zypper --non-interactive dist-upgrade --allow-vendor-change --from packman
+zypper --non-interactive dist-upgrade --allow-vendor-change --from mozilla
+zypper --non-interactive install telegram google-chrome-stable vlc vlc-codecs qbittorrent fuse-exfat
