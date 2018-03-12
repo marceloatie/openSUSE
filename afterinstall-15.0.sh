@@ -14,10 +14,10 @@ zypper removerepo http://download.opensuse.org/source/distribution/leap/15.0/rep
 zypper removerepo http://download.opensuse.org/source/distribution/leap/15.0/repo/non-oss/
 
 # - Add third part repositories
-zypper --quiet --non-interactive --gpg-auto-import-keys addrepo -p 90 http://packman.inode.at/suse/openSUSE_Leap_15.0/ 'packman'
-zypper --quiet --non-interactive --gpg-auto-import-keys addrepo -p 80 https://dl.google.com/linux/rpm/stable/x86_64/ 'google-chrome'
-zypper --quiet --non-interactive --gpg-auto-import-keys addrepo -p 80 http://download.opensuse.org/repositories/home:/marceloatie/openSUSE_Leap_15.0/ 'telegram'
-zypper --quiet --non-interactive --gpg-auto-import-keys addrepo -p 80 http://download.opensuse.org/repositories/mozilla/openSUSE_Leap_15.0/ 'mozilla'
+zypper --quiet --non-interactive --gpg-auto-import-keys addrepo --refresh -p 90 http://packman.inode.at/suse/openSUSE_Leap_15.0/ 'packman'
+zypper --quiet --non-interactive --gpg-auto-import-keys addrepo --refresh -p 80 https://dl.google.com/linux/rpm/stable/x86_64/ 'google-chrome'
+zypper --quiet --non-interactive --gpg-auto-import-keys addrepo --refresh -p 80 http://download.opensuse.org/repositories/home:/marceloatie/openSUSE_Leap_15.0/ 'telegram'
+zypper --quiet --non-interactive --gpg-auto-import-keys addrepo --refresh -p 80 http://download.opensuse.org/repositories/mozilla/openSUSE_Leap_15.0/ 'mozilla'
 
 # - Install new software
 zypper refresh
