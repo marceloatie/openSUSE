@@ -23,4 +23,4 @@ zypper --quiet --non-interactive --gpg-auto-import-keys addrepo --refresh -p 80 
 zypper refresh
 zypper --non-interactive dist-upgrade --allow-vendor-change --from packman
 zypper --non-interactive dist-upgrade --allow-vendor-change --from mozilla
-zypper --non-interactive install telegram google-chrome-stable vlc vlc-codecs qbittorrent fuse-exfat
+zypper --non-interactive install telegram google-chrome-stable vlc vlc-codecs qbittorrent fuse-exfat exfat-utils
