@@ -7,8 +7,8 @@ rpm --import https://dl.google.com/linux/linux_signing_key.pub
 # debug
 zypper removerepo http://download.opensuse.org/debug/distribution/leap/15.0/repo/oss/
 zypper removerepo http://download.opensuse.org/debug/distribution/leap/15.0/repo/non-oss/
-zypper removerepo http://download.opensuse.org/debug/update/leap/15.0/repo/oss/
-zypper removerepo http://download.opensuse.org/debug/update/leap/15.0/repo/non-oss/
+zypper removerepo http://download.opensuse.org/debug/update/leap/15.0/oss/
+zypper removerepo http://download.opensuse.org/debug/update/leap/15.0/non-oss/
 # source
 zypper removerepo http://download.opensuse.org/source/distribution/leap/15.0/repo/oss/
 zypper removerepo http://download.opensuse.org/source/distribution/leap/15.0/repo/non-oss/
