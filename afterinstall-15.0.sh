@@ -12,6 +12,8 @@ zypper removerepo http://download.opensuse.org/debug/update/leap/15.0/non-oss/
 # source
 zypper removerepo http://download.opensuse.org/source/distribution/leap/15.0/repo/oss/
 zypper removerepo http://download.opensuse.org/source/distribution/leap/15.0/repo/non-oss/
+# installation media
+zypper removerepo openSUSE-Leap-15.0-1
 
 # - Add third part repositories
 zypper --quiet --non-interactive --gpg-auto-import-keys addrepo --refresh -p 90 http://packman.inode.at/suse/openSUSE_Leap_15.0/ 'packman'
