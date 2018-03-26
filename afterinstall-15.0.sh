@@ -26,7 +26,7 @@ zypper --gpg-auto-import-keys refresh
 # - Install new software
 zypper --non-interactive dist-upgrade --allow-vendor-change --from packman
 zypper --non-interactive dist-upgrade --allow-vendor-change --from mozilla
-zypper --non-interactive install telegram google-chrome-stable vlc vlc-codecs qbittorrent fuse-exfat exfat-utils unrar
+zypper --non-interactive install telegram google-chrome-stable vlc vlc-codecs qbittorrent fuse-exfat exfat-utils unar
 # 15.0 / KDE stuff!
 zypper --non-interactive install falkon latte-dock yakuake
 #check for codecs
