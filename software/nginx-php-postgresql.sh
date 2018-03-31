@@ -16,3 +16,6 @@ sed -i -- 's/group = nobody/group = nginx/g' /etc/php7/fpm/php-fpm.d/www.conf
 
 systemctl enable php-fpm
 systemctl start php-fpm
+
+#todo, include nginx.conf
+zypper in php-pgsql
