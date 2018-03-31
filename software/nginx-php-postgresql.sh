@@ -19,3 +19,8 @@ systemctl start php-fpm
 
 #todo, include nginx.conf
 zypper in php-pgsql
+
+#PostgreSQL
+zypper in postgresql-server
+systemctl enable postgresql
+systemctl start postgresql
