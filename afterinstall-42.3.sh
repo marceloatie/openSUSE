@@ -7,8 +7,8 @@ rpm --import https://dl.google.com/linux/linux_signing_key.pub
 # debug
 zypper removerepo http://download.opensuse.org/debug/distribution/leap/42.3/repo/oss/
 zypper removerepo http://download.opensuse.org/debug/distribution/leap/42.3/repo/non-oss/
-zypper removerepo http://download.opensuse.org/debug/update/leap/42.3/repo/oss/
-zypper removerepo http://download.opensuse.org/debug/update/leap/42.3/repo/non-oss/
+zypper removerepo http://download.opensuse.org/debug/update/leap/42.3/oss/
+zypper removerepo http://download.opensuse.org/debug/update/leap/42.3/non-oss/
 # source
 zypper removerepo http://download.opensuse.org/source/distribution/leap/42.3/repo/oss/
 zypper removerepo http://download.opensuse.org/source/distribution/leap/42.3/repo/non-oss/
@@ -23,4 +23,4 @@ zypper --quiet --non-interactive --gpg-auto-import-keys addrepo --refresh -p 80 
 zypper refresh
 zypper --non-interactive dist-upgrade --allow-vendor-change --from packman
 zypper --non-interactive dist-upgrade --allow-vendor-change --from mozilla
-zypper --non-interactive install telegram google-chrome-stable vlc vlc-codecs qbittorrent fuse-exfat
+zypper --non-interactive install telegram google-chrome-stable vlc vlc-codecs qbittorrent fuse-exfat unrar
