@@ -30,4 +30,4 @@ zypper --non-interactive install telegram google-chrome-stable vlc vlc-codecs qb
 # 15.0 / KDE stuff!
 zypper --non-interactive install falkon latte-dock yakuake
 #check for codecs
-zypper --non-interactive install libgstadaptivedemux-1_0-0 libgstbadaudio-1_0-0 libgstbadbase-1_0-0 libgstbadvideo-1_0-0 libgstbasecamerabinsrc-1_0-0 libgstcodecparsers-1_0-0 libgstgl-1_0-0 libgstmpegts-1_0-0 libgstphotography-1_0-0 libgsturidownloader-1_0-0 libgstwayland-1_0-0 libquicktime0 libsox3 sox
+zypper --non-interactive install libgstadaptivedemux-1_0-0 libgstbadaudio-1_0-0 libgstbadbase-1_0-0 libgstbadvideo-1_0-0 libgstbasecamerabinsrc-1_0-0 libgstcodecparsers-1_0-0 libgstgl-1_0-0 libgstmpegts-1_0-0 libgstphotography-1_0-0 libgsturidownloader-1_0-0 libgstwayland-1_0-0 libquicktime0 libsox3 sox vlc-codec-gstreamer
