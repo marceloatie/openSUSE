@@ -20,7 +20,6 @@ zypper --quiet --non-interactive addrepo --refresh -p 90 http://packman.inode.at
 zypper --quiet --non-interactive addrepo --refresh -p 80 https://dl.google.com/linux/rpm/stable/x86_64/ 'google-chrome'
 zypper --quiet --non-interactive addrepo --refresh -p 90 http://linux.teamviewer.com/yum/stable/main/binary-x86_64/ 'teamviewer'
 zypper --quiet --non-interactive addrepo --refresh -p 80 http://download.opensuse.org/repositories/home:/marceloatie/openSUSE_Leap_15.0/ 'home:marceloatie'
-zypper --quiet --non-interactive addrepo --refresh -p 90 http://download.opensuse.org/repositories/home:/opensuseitalia/openSUSE_Leap_15.0/ 'home:opensuseitalia'
 zypper --quiet --non-interactive addrepo --refresh -p 80 http://download.opensuse.org/repositories/mozilla/openSUSE_Leap_15.0/ 'mozilla'
 zypper --gpg-auto-import-keys refresh
 
